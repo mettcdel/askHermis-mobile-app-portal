@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/*
+  askHermis renk paleti (PDF'ten)
+  Kullanım: bg-lilac, text-ink, border-sage/40 gibi.
+  Ağırlık önerisi: warm + white %80 · lilac + pink %8 · peach %6 · sage %4 · muted %2
+*/
+@theme {
+  --color-warm:  #F7F6F4;  /* Warm White  · ana zemin */
+  --color-lilac: #B4A5DC;  /* Soft Lilac  · keşif ve hero */
+  --color-pink:  #DEACD1;  /* Dusty Pink  · lila geçişleri */
+  --color-peach: #E5BFA8;  /* Peach Salmon· aktivite / rota kartları */
+  --color-sage:  #C5D1C5;  /* Sage Green  · otel hizmetleri */
+  --color-muted: #7B92BC;  /* Muted Blue  · ikincil vurgular */
+  --color-ink:   #0A0A0A;  /* Ink Black   · yazılar ve butonlar */
+  --color-deep:  #3C4C7F;  /* Deep Blue   · özel kampanyalar */
+
+  /* Okunabilirlik için palet tonlarının koyu versiyonları (yazı rengi olarak) */
+  --color-lilac-ink: #5B4A93;
+  --color-sage-ink:  #3F5A3F;
+  --color-peach-ink: #8A4E2E;
+  --color-muted-ink: #3D5480;
+}
+
+html, body { background: var(--color-warm); }
+body {
+  -webkit-tap-highlight-color: transparent;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translate(-50%, 8px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+.animate-fade-up { animation: fade-up .2s ease-out; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }

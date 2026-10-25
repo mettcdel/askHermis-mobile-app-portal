@@ -1,0 +1,16 @@
+{
+  "name": "askHermis Misafir Portalı",
+  "short_name": "askHermis",
+  "description": "Hermis Boutique Hotel Athens misafir portalı",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F6F4",
+  "theme_color": "#B4A5DC",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
